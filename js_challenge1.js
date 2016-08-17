@@ -1,7 +1,8 @@
 function myfunction() {
     var div = document.getElementById('myelement');
-    var i = 1;
-    for (i = 1; i <= 30; i++) {
+    var num=parseInt(prompt("Insert a no 1 to 100"));
+    
+    for (var i = 1; i <= num; i++) {
         if (((i % 3) == 0) && ((i % 5) == 0)) {
             div.innerHTML += 'Fizz Buzz' + '<br />';
         } else if ((i % 3) == 0) {
@@ -13,3 +14,22 @@ function myfunction() {
         }
     }
 }
+function utility(message, value){
+    console.log("message:"+message+value);
+
+}
+ var names=["brenda", "earl", "bob","Ishmael"];
+ var compliment="is great";
+ function complimentGiver(names,compliment)
+ {
+    var completed=[];
+    for(var i=0;i<4;i++)
+    {
+        completed.push(names[i]+compliment);
+    }
+    return completed;
+ }
+var count=0;
+function counter(){
+    return ++count;
+ }
